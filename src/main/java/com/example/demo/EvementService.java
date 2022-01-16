@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.example.demo.dao.EvenementRepository;
-import com.example.demo.entities.Evenement;
 
 @SpringBootApplication
 public class EvementService implements CommandLineRunner {
@@ -20,8 +19,6 @@ public class EvementService implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Evenement evenement = new Evenement();
-		evenementRepository.save(evenement);
 	}
 	
 
